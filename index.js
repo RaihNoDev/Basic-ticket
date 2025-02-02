@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const config = require("./config.json");
 
-// Verifica se o arquivo ticket.json existe, se não, cria o arquivo com conteúdo inicial
+
 if (!fs.existsSync("./ticket.json")) {
   fs.writeFileSync("./ticket.json", JSON.stringify([]));
 }
